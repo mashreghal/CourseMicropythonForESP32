@@ -1,10 +1,13 @@
-from machine import Pin 
+from machine import Pin, PWM
+# go to micropython website and check documentation for the ESP32
 #we are working on ESP32 so we need to import the Pin library from the machine library
-import time
-#we need to import the utime library for the delay function
 
-pin = Pin("D13", Pin.OUT) # this is slightly different than Raspberry Pi Pico
-pin.on()
+pwm1 =PWM(Pin(16),freq=1,duty=512) # 1Hz and 50% duty cycle
+
+while True:
+    pass
+# schaue dir die Demo von Werner an mit seiner LED
+
 
 
 
